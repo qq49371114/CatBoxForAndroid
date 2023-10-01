@@ -1,5 +1,7 @@
 berty.tech/go-libtor v1.0.385 h1:RWK94C3hZj6Z2GdvePpHJLnWYobFr3bY/OdUJ5aoEXw=
 berty.tech/go-libtor v1.0.385/go.mod h1:9swOOQVb+kmvuAlsgWUK/4c52pm69AdbJsxLzk+fJEw=
+github.com/AntiNeko/TLS-scribe v0.3.2 h1:Q/Jg+dak9wdL2FOFnZ1uKiCRYQ4+soz551ij3Rak/Q4=
+github.com/AntiNeko/TLS-scribe v0.3.2/go.mod h1:RgghDszdGlVWlrrbDNPXjZmk0JyVD69cARp0w92Rzvc=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/ajg/form v1.5.1 h1:t9c7v8JUKu/XxOGBU0yjNpaMloxGEJhUkqFRq0ibGeU=
 github.com/ajg/form v1.5.1/go.mod h1:uL1WgH+h2mgNtvBq0339dVnzXdBETtL2LeUXaIv25UY=

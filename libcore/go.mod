@@ -3,6 +3,7 @@ module libcore
 go 1.18
 
 require (
+	github.com/AntiNeko/TLS-scribe v0.3.2
 	github.com/codeclysm/extract v2.2.0+incompatible
 	github.com/matsuridayo/libneko v1.0.0 // replaced
 	github.com/matsuridayo/sing-box-extra v1.0.0 // replaced
