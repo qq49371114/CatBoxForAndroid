@@ -1938,9 +1938,7 @@ public class SingBoxOptions {
         public Boolean dynamic_record_sizing_disabled;
 
         // Generate note: Listable
-        public List<String> config;
-
-        public String config_path;
+        public String config;
 
     }
 

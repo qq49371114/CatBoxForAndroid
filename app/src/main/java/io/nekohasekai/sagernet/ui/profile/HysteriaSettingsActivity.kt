@@ -35,6 +35,8 @@ class HysteriaSettingsActivity : ProfileSettingsActivity<HysteriaBean>() {
         DataStore.serverConnectionReceiveWindow = connectionReceiveWindow
         DataStore.serverDisableMtuDiscovery = disableMtuDiscovery
         DataStore.serverHopInterval = hopInterval
+        DataStore.ech = ech
+        DataStore.echCfg = echCfg
     }
 
     override fun HysteriaBean.serialize() {
@@ -56,6 +58,8 @@ class HysteriaSettingsActivity : ProfileSettingsActivity<HysteriaBean>() {
         connectionReceiveWindow = DataStore.serverConnectionReceiveWindow
         disableMtuDiscovery = DataStore.serverDisableMtuDiscovery
         hopInterval = DataStore.serverHopInterval
+        ech = DataStore.ech
+        echCfg = DataStore.echCfg
     }
 
     override fun PreferenceFragmentCompat.createPreferences(
@@ -74,6 +78,11 @@ class HysteriaSettingsActivity : ProfileSettingsActivity<HysteriaBean>() {
 
         val protocol = findPreference<SimpleMenuPreference>(Key.SERVER_PROTOCOL)!!
         val alpn = findPreference<EditTextPreference>(Key.SERVER_ALPN)!!
+
+//        val ech = findPreference<SwitchPreference>(Key.ECH)!!.apply {
+//            set
+//        }
+//        val echCfg = findPreference<EditTextPreference>(Key.ECH_CFG)!!
 
         fun updateVersion(v: Int) {
             if (v == 2) {

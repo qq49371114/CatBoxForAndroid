@@ -525,5 +525,6 @@ Anyone can write advanced plugins, which can control CatBox. please download and
     <string name="get_cert_summary">Get the TLS certification of target server.Support https and QUIC.</string>
     <string name="get_cert_success">Obtained successfully! Certificate copied to clipboard.</string>
     <string name="get_cert_fail">Failed to get cert!</string>
+    <string name="ech_config">ECH configuration</string>
 
 </resources>

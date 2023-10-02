@@ -4,6 +4,7 @@ import io.nekohasekai.sagernet.ktx.linkBuilder
 import io.nekohasekai.sagernet.ktx.toLink
 import io.nekohasekai.sagernet.ktx.urlSafe
 import moe.matsuri.nb4a.SingBoxOptions
+import moe.matsuri.nb4a.SingBoxOptions.OutboundECHOptions
 import moe.matsuri.nb4a.utils.listByLineOrComma
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
@@ -81,6 +82,14 @@ fun buildSingBoxOutboundTuicBean(bean: TuicBean): SingBoxOptions.Outbound_TUICOp
             }
             if (bean.caText.isNotBlank()) {
                 certificate = bean.caText
+            }
+            if (bean.ech) {
+                ech = OutboundECHOptions().apply {
+                    enabled = true
+                    pq_signature_schemes_enabled = true
+                    dynamic_record_sizing_disabled = true
+                    config = bean.echCfg
+                }
             }
             disable_sni = bean.disableSNI
             insecure = bean.allowInsecure

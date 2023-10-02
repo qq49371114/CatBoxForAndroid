@@ -484,4 +484,5 @@
     <string name="get_cert_summary">获取目标网站的 TLS 证书。支持 https 和 QUIC。</string>
     <string name="get_cert_success">获取成功！证书已复制到剪贴板.</string>
     <string name="get_cert_fail">获取证书失败！</string>
+    <string name="ech_config">ECH 配置</string>
 </resources>
