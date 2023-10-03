@@ -636,11 +636,12 @@ fun buildSingBoxOutboundTLS(bean: StandardV2RayBean): OutboundTLSOptions? {
             }
         }
         if (bean.ech) {
+            val e_list = bean.echCfg.split("\n")
             ech = OutboundECHOptions().apply {
                 enabled = true
-                pq_signature_schemes_enabled = true
+                pq_signature_schemes_enabled = e_list.size > 5
                 dynamic_record_sizing_disabled = true
-                config = bean.echCfg
+                config = e_list
             }
         }
     }
